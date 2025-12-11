@@ -7,9 +7,9 @@
 
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![R-CMD-check](https://github.com/poissonconsulting/ypr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/ypr/actions/workflows/R-CMD-check.yaml)
+[![R-CMD-check](https://github.com/hctfbc/ypr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hctfbc/ypr/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
-coverage](https://codecov.io/gh/poissonconsulting/ypr/graph/badge.svg)](https://app.codecov.io/gh/poissonconsulting/ypr)
+coverage](https://codecov.io/gh/hctfbc/ypr/graph/badge.svg)](https://app.codecov.io/gh/hctfbc/ypr)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit/)
 [![CRAN
@@ -19,7 +19,7 @@ status](https://www.r-pkg.org/badges/version/ypr)](https://cran.r-project.org/pa
 
 ## Introduction
 
-[`ypr`](https://github.com/poissonconsulting/ypr) is an R package that
+[`ypr`](https://github.com/hctfbc/ypr) is an R package that
 implements equilibrium-based yield per recruit methods. Yield per
 recruit methods can used to estimate the optimal yield (Walters and
 Martell 2004) of a fish population with one or more ecotypes. The yield
@@ -155,14 +155,14 @@ ypr_plot_yield(population)
 ## Information
 
 For more information see the [Get
-Started](https://poissonconsulting.github.io/ypr/articles/ypr.html)
+Started](https://hctfbc.github.io/ypr/articles/ypr.html)
 vignette.
 
 ### Interaction
 
 To interactively explore the effects of altering individual parameters
 on the schedule, stock-recruitment and yield see the ypr shiny
-[app](https://poissonconsulting.shinyapps.io/shinyypr/).
+[app](https://hctfbc.shinyapps.io/shinyypr/).
 
 <figure>
 <img src="man/figures/yield.png"
@@ -183,39 +183,32 @@ install.packages("ypr")
 ```
 
 The website for the release version is at
-<https://poissonconsulting.github.io/ypr/>.
+<https://hctfbc.github.io/ypr/>.
 
 ### Development
 
-To install the development version from
-[r-universe](https://poissonconsulting.r-universe.dev/ypr).
-
-``` r
-install.packages("ypr", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
-```
-
-or from [GitHub](https://github.com/poissonconsulting/ypr)
+To install the development version from [GitHub](https://github.com/hctfbc/ypr)
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("poissonconsulting/ypr")
+remotes::install_github("hctfbc/ypr")
 ```
 
 ## Creditation
 
 Development of ypr was partially supported by the [Habitat Conservation
-Trust Foundation](https://www.poissonconsulting.ca/orgs/hctf.html) and
+Trust Foundation](https://www.hctfbc.ca/orgs/hctf.html) and
 the [Ministry of Forests, Lands and Natural Resource
-Operations](https://www.poissonconsulting.ca/orgs/mflnro.html).
+Operations](https://www.hctfbc.ca/orgs/mflnro.html).
 
 The hex was designed by [The Forest](https://www.theforest.ca).
 
 ## Contribution
 
 Please report any
-[issues](https://github.com/poissonconsulting/ypr/issues).
+[issues](https://github.com/hctfbc/ypr/issues).
 
-[Pull requests](https://github.com/poissonconsulting/ypr/pulls) are
+[Pull requests](https://github.com/hctfbc/ypr/pulls) are
 always welcome.
 
 ## Code of Conduct
