@@ -199,7 +199,7 @@ remotes::install_github("hctfbc/ypr")
 Development of ypr was partially supported by the [Habitat Conservation
 Trust Foundation](https://www.hctf.ca) and
 the Ministry of Forests, Lands and Natural Resource
-Operations](https://www.hctfbc.ca/orgs/mflnro.html).
+Operations.
 
 The hex was designed by [The Forest](https://www.theforest.ca).
 
