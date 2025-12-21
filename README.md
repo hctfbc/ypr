@@ -197,7 +197,7 @@ remotes::install_github("hctfbc/ypr")
 ## Creditation
 
 Development of ypr was partially supported by the [Habitat Conservation
-Trust Foundation](https://www.hctfbc.ca/orgs/hctf.html) and
+Trust Foundation](https://www.hctf.ca) and
 the [Ministry of Forests, Lands and Natural Resource
 Operations](https://www.hctfbc.ca/orgs/mflnro.html).
 
