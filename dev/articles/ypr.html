@@ -13,8 +13,8 @@
 <link rel="manifest" href="../site.webmanifest">
 <!-- katex math --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script><script src="../katex-auto.js"></script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/Roboto_Condensed-0.4.10/font.css" rel="stylesheet">
+<link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/Roboto_Condensed-0.4.10/font.css" rel="stylesheet">
 <link href="../deps/Roboto_Mono-0.4.10/font.css" rel="stylesheet">
 <link href="../deps/Playfair_Display-0.4.10/font.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">ypr</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.6.0.9013</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="In-development version">0.6.0.9014</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +70,7 @@
                         <h4 data-toc-skip class="author">Joe
 Thorley</h4>
             
-            <h4 data-toc-skip class="date">2025-11-17</h4>
+            <h4 data-toc-skip class="date">2026-07-14</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/poissonconsulting/ypr/blob/main/vignettes/ypr.Rmd" class="external-link"><code>vignettes/ypr.Rmd</code></a></small>
       <div class="d-none name"><code>ypr.Rmd</code></div>
@@ -297,16 +297,16 @@ growth curve</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population.html">ypr_population</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Age"</span>, <span class="st">"Length"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-2-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-2-1.png" class="r-plt" alt="" width="384"></p>
 <p>which can be biphasic</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, L2 <span class="op">=</span> <span class="fl">75</span>, Linf2 <span class="op">=</span> <span class="fl">200</span><span class="op">)</span>, <span class="st">"Age"</span>, <span class="st">"Length"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Warning: `ypr_population_update()` was deprecated in ypr 0.5.3.</span></span>
 <span><span class="co">#&gt; <span style="color: #00BBBB;">ℹ</span> Please use `ypr_update()` instead.</span></span>
-<span><span class="co">#&gt; <span style="color: #555555;">This warning is displayed once every 8 hours.</span></span></span>
+<span><span class="co">#&gt; <span style="color: #555555;">This warning is displayed once per session.</span></span></span>
 <span><span class="co">#&gt; <span style="color: #555555;">Call `lifecycle::last_lifecycle_warnings()` to see where this warning was</span></span></span>
 <span><span class="co">#&gt; <span style="color: #555555;">generated.</span></span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-3-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-3-1.png" class="r-plt" alt="" width="384"></p>
 </div>
 <div class="section level3">
 <h3 id="weight">Weight<a class="anchor" aria-label="anchor" href="#weight"></a>
@@ -317,7 +317,7 @@ assumed to follow the classic allometric relationship</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, Wa <span class="op">=</span> <span class="fl">0.01</span>, Wb <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Length"</span>, <span class="st">"Weight"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-4-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-4-1.png" class="r-plt" alt="" width="384"></p>
 <p>Its worth noting that <span class="math inline">w_\alpha</span>,
 which is the extrapolated weight (g) of a 1 cm individual, is a scaling
 constant that only affects the estimate of the yield (when calculated in
@@ -337,7 +337,7 @@ scale allometrically with the weight according to the equation</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, fa <span class="op">=</span> <span class="fl">1</span>, fb <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Weight"</span>, <span class="st">"Fecundity"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-5-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-5-1.png" class="r-plt" alt="" width="384"></p>
 <p><span class="math inline">f_\alpha</span>, which is the extrapolated
 eggs produced by a 1 g female, is a scaling constant with no effect on
 the yield or optimal capture rate.</p>
@@ -351,7 +351,7 @@ the yield or optimal capture rate.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, Ls <span class="op">=</span> <span class="fl">50</span>, Sp <span class="op">=</span> <span class="fl">10</span>, es <span class="op">=</span> <span class="fl">0.8</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Length"</span>, <span class="st">"Spawning"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-6-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-6-1.png" class="r-plt" alt="" width="384"></p>
 </div>
 </div>
 <div class="section level2">
@@ -363,17 +363,17 @@ the yield or optimal capture rate.</p>
 <p>By default the natural annual interval mortality rate (<span class="math inline">n</span>) is assumed to be constant</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Length"</span>, <span class="st">"NaturalMortality"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-7-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-7-1.png" class="r-plt" alt="" width="384"></p>
 <p>although like growth it can vary biphasically</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, nL <span class="op">=</span> <span class="fl">0.15</span>, Ln <span class="op">=</span> <span class="fl">60</span><span class="op">)</span>, <span class="st">"Length"</span>, <span class="st">"NaturalMortality"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-8-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-8-1.png" class="r-plt" alt="" width="384"></p>
 <p>The natural mortality rate can also be affected by spawning
 mortality</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, Sm <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Length"</span>, <span class="st">"NaturalMortality"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-9-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-9-1.png" class="r-plt" alt="" width="384"></p>
 </div>
 <div class="section level3">
 <h3 id="fishing-mortality">Fishing Mortality<a class="anchor" aria-label="anchor" href="#fishing-mortality"></a>
@@ -385,7 +385,7 @@ L^{V_p}}</span></p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, Lv <span class="op">=</span> <span class="fl">50</span>, Vp <span class="op">=</span> <span class="fl">50</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Length"</span>, <span class="st">"Vulnerability"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-10-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-10-1.png" class="r-plt" alt="" width="384"></p>
 <p>If <span class="math inline">V_p</span> is 100 then vulnerability is
 effectively knife-edged.</p>
 <p>The probabilty of being retained if captured (<span class="math inline">R</span>) depends on the release rate (<span class="math inline">\rho</span>), the slot limits (<span class="math inline">L_{lo}</span> and <span class="math inline">L_{up}</span>) and the non-compliance with the
@@ -393,7 +393,7 @@ limits (<span class="math inline">N_c</span>)</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, rho <span class="op">=</span> <span class="fl">0.5</span>, Llo <span class="op">=</span> <span class="fl">40</span>, Lup <span class="op">=</span> <span class="fl">70</span>, Nc <span class="op">=</span> <span class="fl">0.1</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Length"</span>, <span class="st">"Retention"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-11-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-11-1.png" class="r-plt" alt="" width="384"></p>
 <p>The fishing mortality (<span class="math inline">U</span>) depends on
 <span class="math inline">V</span>, <span class="math inline">R</span>
 and the probability of capture when fully vulnerable (<span class="math inline">pi</span>) as well as the hooking mortality (<span class="math inline">H_m</span>)</p>
@@ -404,7 +404,7 @@ the same year.</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, pi <span class="op">=</span> <span class="fl">0.3</span>, Hm <span class="op">=</span> <span class="fl">0.2</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Length"</span>, <span class="st">"FishingMortality"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-12-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-12-1.png" class="r-plt" alt="" width="384"></p>
 </div>
 </div>
 <div class="section level2">
@@ -422,7 +422,7 @@ density (<span class="math inline">R_k</span>) and the recruitment age
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, Rk <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_sr.html">ypr_plot_sr</a></span><span class="op">(</span><span class="va">population</span>, plot_values <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-13-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-13-1.png" class="r-plt" alt="" width="384"></p>
 <p>where <span class="math inline">E</span> is the annual eggs (stock)
 and <span class="math inline">R</span> is the annual recruits at age
 <span class="math inline">R_t</span>.</p>
@@ -433,7 +433,7 @@ relationship is as follows</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">population</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ypr_population_update.html">ypr_population_update</a></span><span class="op">(</span><span class="va">population</span>, BH <span class="op">=</span> <span class="fl">0L</span><span class="op">)</span></span>
 <span><span class="fu"><a href="../reference/ypr_plot_sr.html">ypr_plot_sr</a></span><span class="op">(</span><span class="va">population</span>, plot_values <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-14-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-14-1.png" class="r-plt" alt="" width="384"></p>
 <p>The number of recruits at the carrying capacity (<span class="math inline">R_\text{max}</span>) is a scaling constant that only
 affects the estimate of the yield.</p>
 <p>Before calculating the recruitment it is important to introduce the
@@ -442,7 +442,7 @@ surviving to age <span class="math inline">a</span> in the absence of
 fish mortality.</p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/ypr_plot_schedule.html">ypr_plot_schedule</a></span><span class="op">(</span><span class="va">population</span>, <span class="st">"Age"</span>, <span class="st">"Survivorship"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-15-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-15-1.png" class="r-plt" alt="" width="384"></p>
 <p>The unfished survivorship (<span class="math inline">lx_a</span>) is
 defined recursively by</p>
 <p><span class="math display">lx_{R_t} = 1, lx_a = lx_{a-1} \cdot
@@ -533,7 +533,7 @@ the weight or whether or not its harvested) then it is given by</p>
 fish.</p>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/ypr_plot_yield.html">ypr_plot_yield</a></span><span class="op">(</span><span class="va">population</span>, harvest <span class="op">=</span> <span class="cn">TRUE</span>, biomass <span class="op">=</span> <span class="cn">TRUE</span>, Ly <span class="op">=</span> <span class="fl">60</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-16-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-16-1.png" class="r-plt" alt="" width="384"></p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/ypr_tabulate_yield.html">ypr_tabulate_yield</a></span><span class="op">(</span><span class="va">population</span>, harvest <span class="op">=</span> <span class="cn">TRUE</span>, biomass <span class="op">=</span> <span class="cn">TRUE</span>, Ly <span class="op">=</span> <span class="fl">60</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 2 × 8</span></span></span>
@@ -553,17 +553,17 @@ E)</span> which can be rearranged to give <span class="math display">E =
 \frac{\log(1-\pi)}{\log(1-q)}.</span></p>
 <div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/ypr_plot_yield.html">ypr_plot_yield</a></span><span class="op">(</span><span class="va">population</span>, y <span class="op">=</span> <span class="st">"Effort"</span>, harvest <span class="op">=</span> <span class="cn">TRUE</span>, biomass <span class="op">=</span> <span class="cn">TRUE</span>, Ly <span class="op">=</span> <span class="fl">60</span><span class="op">)</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-17-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-17-1.png" class="r-plt" alt="" width="384"></p>
 <div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/ypr_plot_yield.html">ypr_plot_yield</a></span><span class="op">(</span><span class="va">population</span>, y <span class="op">=</span> <span class="st">"YPUE"</span>, harvest <span class="op">=</span> <span class="cn">TRUE</span>, biomass <span class="op">=</span> <span class="cn">TRUE</span>, Ly <span class="op">=</span> <span class="fl">60</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Warning: Removed 1 row containing missing values or values outside the scale range</span></span>
 <span><span class="co">#&gt; (`geom_line()`).</span></span></code></pre></div>
-<p><img src="ypr_files/figure-html/unnamed-chunk-18-1.png" class="r-plt" width="384"></p>
+<p><img src="ypr_files/figure-html/unnamed-chunk-18-1.png" class="r-plt" alt="" width="384"></p>
 </div>
 <div class="section level2 unnumbered">
 <h2 class="unnumbered" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
 </h2>
-<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-cooper_guide_2006" class="csl-entry">
 Cooper, Andrew B. 2006. <em>A Guide to Fisheries Stock Assessment: From
 Data to Recommendations</em>. University of New Hampshire, Sea Grant
@@ -571,8 +571,8 @@ College Program.
 </div>
 <div id="ref-walters_fisheries_2004" class="csl-entry">
 Walters, Carl J., and Steven J. D. Martell. 2004. <em>Fisheries
-<span>Ecology</span> and <span>Management</span></em>. Princeton, N.J:
-Princeton University Press.
+<span>Ecology</span> and <span>Management</span></em>. Princeton
+University Press.
 </div>
 </div>
 </div>
@@ -587,7 +587,7 @@ Princeton University Press.
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.9000.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>

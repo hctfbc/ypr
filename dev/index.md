@@ -31,6 +31,7 @@ dynamics, angler responses or density-dependent growth.
 ### Schedule
 
 ``` r
+
 library(ypr)
 population <- ypr_population(Rk = 5, Ls = 50, Rmax = 100, rho = 0.6)
 ypr_plot_schedule(population, x = "Length", y = "Spawning")
@@ -39,6 +40,7 @@ ypr_plot_schedule(population, x = "Length", y = "Spawning")
 ![](reference/figures/README-unnamed-chunk-1-1.png)
 
 ``` r
+
 ypr_tabulate_schedule(population)
 #> # A tibble: 20 × 11
 #>      Age Length Weight Fecundity Spawning NaturalMortality Vulnerability
@@ -70,12 +72,14 @@ ypr_tabulate_schedule(population)
 ### Fish
 
 ``` r
+
 ypr_plot_fish(population, color = "white")
 ```
 
 ![](reference/figures/README-unnamed-chunk-2-1.png)
 
 ``` r
+
 ypr_tabulate_fish(population)
 #> # A tibble: 20 × 8
 #>      Age Survivors Spawners   Caught Harvested Released HandlingMortalities
@@ -106,12 +110,14 @@ ypr_tabulate_fish(population)
 ### Stock-Recruitment
 
 ``` r
+
 ypr_plot_sr(population)
 ```
 
 ![](reference/figures/README-unnamed-chunk-3-1.png)
 
 ``` r
+
 ypr_tabulate_sr(population)
 #> # A tibble: 3 × 7
 #>   Type        pi     u    Eggs Recruits Spawners Fecundity
@@ -124,6 +130,7 @@ ypr_tabulate_sr(population)
 ### Yield
 
 ``` r
+
 ypr_tabulate_yield(population)
 #> # A tibble: 2 × 8
 #>   Type       pi     u Yield   Age Length Weight Effort
@@ -160,6 +167,7 @@ To install the release version from
 [CRAN](https://CRAN.R-project.org/package=ypr).
 
 ``` r
+
 install.packages("ypr")
 ```
 
@@ -172,12 +180,14 @@ To install the development version from
 [r-universe](https://poissonconsulting.r-universe.dev/ypr).
 
 ``` r
+
 install.packages("ypr", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
 ```
 
 or from [GitHub](https://github.com/poissonconsulting/ypr)
 
 ``` r
+
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/ypr")
 ```

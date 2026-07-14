@@ -14,42 +14,43 @@ captured by the stock-recruitment relationship. The remaining population
 processes of growth, reproduction and death are captured through a
 series of relatively straight-forward deterministic equations.
 
-| Parameter |   Value | Description                                                                                                           |
-|:----------|--------:|:----------------------------------------------------------------------------------------------------------------------|
-| tmax      |   20.00 | The maximum age (yr).                                                                                                 |
-| k         |    0.15 | The VB growth coefficient (yr-1).                                                                                     |
-| Linf      |  100.00 | The VB mean maximum length (cm).                                                                                      |
-| t0        |    0.00 | The (theoretical) age at zero length (yr).                                                                            |
-| k2        |    0.15 | The VB growth coefficient after length L2 (yr-1).                                                                     |
-| Linf2     |  100.00 | The VB mean maximum length after length L2 (cm).                                                                      |
-| L2        | 1000.00 | The length (or age if negative) at which growth switches from the first to second phase (cm or yr).                   |
-| Wb        |    3.00 | The weight (as a function of length) scaling exponent.                                                                |
-| Ls        |   50.00 | The length (or age if negative) at which 50 % mature (cm or yr).                                                      |
-| Sp        |  100.00 | The maturity (as a function of length) power.                                                                         |
-| es        |    1.00 | The annual probability of a mature fish spawning.                                                                     |
-| Sm        |    0.00 | The spawning mortality probability.                                                                                   |
-| fb        |    1.00 | The fecundity (as a function of weight) scaling exponent.                                                             |
-| tR        |    1.00 | The age from which survival is density-independent (yr).                                                              |
-| BH        |    1.00 | Recruitment follows a Beverton-Holt (1) or Ricker (0) relationship.                                                   |
-| Rk        |    3.00 | The lifetime spawners per spawner at low density (or the egg to tR survival if between 0 and 1).                      |
-| n         |    0.20 | The \strong{annual interval                                                                                           |
-| nL        |    0.20 | The \strong{annual interval                                                                                           |
-| Ln        | 1000.00 | The length (or age if negative) at which the annual interval natural mortality rate switches from n to nL (cm or yr). |
-| Lv        |   50.00 | The length (or age if negative) at which 50 % vulnerable to harvest (cm or yr).                                       |
-| Vp        |  100.00 | The vulnerability to harvest (as a function of length) power.                                                         |
-| Llo       |    0.00 | The lower harvest slot length (cm).                                                                                   |
-| Lup       | 1000.00 | The upper harvest slot length (cm).                                                                                   |
-| Nc        |    0.00 | The slot limits non-compliance probability.                                                                           |
-| pi        |    0.20 | The annual capture probability.                                                                                       |
-| rho       |    0.00 | The release probability.                                                                                              |
-| Hm        |    0.00 | The hooking mortality probability.                                                                                    |
-| Rmax      |    1.00 | The number of recruits at the carrying capacity (ind).                                                                |
-| Wa        |    0.01 | The (extrapolated) weight of a 1 cm individual (g).                                                                   |
-| fa        |    1.00 | The (theoretical) fecundity of a 1 g female (eggs).                                                                   |
-| q         |    0.10 | The catchability (annual probability of capture) for a unit of effort.                                                |
-| RPR       |    1.00 | The relative proportion of recruits that are of the ecotype.                                                          |
+| Parameter | Value | Description |
+|:---|---:|:---|
+| tmax | 20.00 | The maximum age (yr). |
+| k | 0.15 | The VB growth coefficient (yr-1). |
+| Linf | 100.00 | The VB mean maximum length (cm). |
+| t0 | 0.00 | The (theoretical) age at zero length (yr). |
+| k2 | 0.15 | The VB growth coefficient after length L2 (yr-1). |
+| Linf2 | 100.00 | The VB mean maximum length after length L2 (cm). |
+| L2 | 1000.00 | The length (or age if negative) at which growth switches from the first to second phase (cm or yr). |
+| Wb | 3.00 | The weight (as a function of length) scaling exponent. |
+| Ls | 50.00 | The length (or age if negative) at which 50 % mature (cm or yr). |
+| Sp | 100.00 | The maturity (as a function of length) power. |
+| es | 1.00 | The annual probability of a mature fish spawning. |
+| Sm | 0.00 | The spawning mortality probability. |
+| fb | 1.00 | The fecundity (as a function of weight) scaling exponent. |
+| tR | 1.00 | The age from which survival is density-independent (yr). |
+| BH | 1.00 | Recruitment follows a Beverton-Holt (1) or Ricker (0) relationship. |
+| Rk | 3.00 | The lifetime spawners per spawner at low density (or the egg to tR survival if between 0 and 1). |
+| n | 0.20 | The \strong{annual interval |
+| nL | 0.20 | The \strong{annual interval |
+| Ln | 1000.00 | The length (or age if negative) at which the annual interval natural mortality rate switches from n to nL (cm or yr). |
+| Lv | 50.00 | The length (or age if negative) at which 50 % vulnerable to harvest (cm or yr). |
+| Vp | 100.00 | The vulnerability to harvest (as a function of length) power. |
+| Llo | 0.00 | The lower harvest slot length (cm). |
+| Lup | 1000.00 | The upper harvest slot length (cm). |
+| Nc | 0.00 | The slot limits non-compliance probability. |
+| pi | 0.20 | The annual capture probability. |
+| rho | 0.00 | The release probability. |
+| Hm | 0.00 | The hooking mortality probability. |
+| Rmax | 1.00 | The number of recruits at the carrying capacity (ind). |
+| Wa | 0.01 | The (extrapolated) weight of a 1 cm individual (g). |
+| fa | 1.00 | The (theoretical) fecundity of a 1 g female (eggs). |
+| q | 0.10 | The catchability (annual probability of capture) for a unit of effort. |
+| RPR | 1.00 | The relative proportion of recruits that are of the ecotype. |
 
 Table 1. The 32 parameters with their default values and descriptions.
+{.table}
 
 ## Growth
 
@@ -61,6 +62,7 @@ Bertalanffy growth curve
 L = L\_{\infty} \cdot (1 - \exp(-k \cdot (t-t_0)))
 
 ``` r
+
 population <- ypr_population()
 ypr_plot_schedule(population, "Age", "Length")
 ```
@@ -70,10 +72,11 @@ ypr_plot_schedule(population, "Age", "Length")
 which can be biphasic
 
 ``` r
+
 ypr_plot_schedule(ypr_population_update(population, L2 = 75, Linf2 = 200), "Age", "Length")
 #> Warning: `ypr_population_update()` was deprecated in ypr 0.5.3.
 #> ℹ Please use `ypr_update()` instead.
-#> This warning is displayed once every 8 hours.
+#> This warning is displayed once per session.
 #> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
 #> generated.
 ```
@@ -88,6 +91,7 @@ allometric relationship
 W = w\_\alpha \cdot L^{w\_\beta}
 
 ``` r
+
 population <- ypr_population_update(population, Wa = 0.01, Wb = 3)
 ypr_plot_schedule(population, "Length", "Weight")
 ```
@@ -109,6 +113,7 @@ according to the equation
 F = f\_\alpha \cdot W^{f\_\beta}
 
 ``` r
+
 population <- ypr_population_update(population, fa = 1, fb = 1)
 ypr_plot_schedule(population, "Weight", "Fecundity")
 ```
@@ -125,6 +130,7 @@ The probability of spawning at length L is determined by the equation
 S = \frac{L^{S_p}}{L_s^{S_p} + L^{S_p}} \cdot es
 
 ``` r
+
 population <- ypr_population_update(population, Ls = 50, Sp = 10, es = 0.8)
 ypr_plot_schedule(population, "Length", "Spawning")
 ```
@@ -139,6 +145,7 @@ By default the natural annual interval mortality rate (n) is assumed to
 be constant
 
 ``` r
+
 ypr_plot_schedule(population, "Length", "NaturalMortality")
 ```
 
@@ -147,6 +154,7 @@ ypr_plot_schedule(population, "Length", "NaturalMortality")
 although like growth it can vary biphasically
 
 ``` r
+
 ypr_plot_schedule(ypr_population_update(population, nL = 0.15, Ln = 60), "Length", "NaturalMortality")
 ```
 
@@ -155,6 +163,7 @@ ypr_plot_schedule(ypr_population_update(population, nL = 0.15, Ln = 60), "Length
 The natural mortality rate can also be affected by spawning mortality
 
 ``` r
+
 population <- ypr_population_update(population, Sm = 0.5)
 ypr_plot_schedule(population, "Length", "NaturalMortality")
 ```
@@ -168,6 +177,7 @@ The vulnerability to capture (V) is assumed to vary by length as follows
 V = \frac{L^{V_p}}{L_v^{V_p} + L^{V_p}}
 
 ``` r
+
 population <- ypr_population_update(population, Lv = 50, Vp = 50)
 ypr_plot_schedule(population, "Length", "Vulnerability")
 ```
@@ -181,6 +191,7 @@ rate (\rho), the slot limits (L\_{lo} and L\_{up}) and the
 non-compliance with the limits (N_c)
 
 ``` r
+
 population <- ypr_population_update(population, rho = 0.5, Llo = 40, Lup = 70, Nc = 0.1)
 ypr_plot_schedule(population, "Length", "Retention")
 ```
@@ -196,6 +207,7 @@ The calculation assumes that a released fish cannot be recaught in the
 same year.
 
 ``` r
+
 population <- ypr_population_update(population, pi = 0.3, Hm = 0.2)
 ypr_plot_schedule(population, "Length", "FishingMortality")
 ```
@@ -215,6 +227,7 @@ If recruitment follows a Beverton-Holt (BH = 1) curve then
 R = \frac{\alpha \cdot E}{(\beta \cdot E + 1)}
 
 ``` r
+
 population <- ypr_population_update(population, Rk = 3)
 ypr_plot_sr(population, plot_values = FALSE)
 ```
@@ -229,6 +242,7 @@ With a Ricker curve (BH = 0) the relationship is as follows
 R = \alpha \cdot E \cdot \exp (-\beta \cdot E)
 
 ``` r
+
 population <- ypr_population_update(population, BH = 0L)
 ypr_plot_sr(population, plot_values = FALSE)
 ```
@@ -243,6 +257,7 @@ concept of the (unfished) survivorship (lx_a) which is the probability
 of a recruit surviving to age a in the absence of fish mortality.
 
 ``` r
+
 ypr_plot_schedule(population, "Age", "Survivorship")
 ```
 
@@ -353,12 +368,14 @@ Y = \sum\_{a = R_t}^{t\_\text{max}} \text{if}(La \< L_y)\\ 0\\
 W_a/1000 where L_y is the minimum length of a trophy fish.
 
 ``` r
+
 ypr_plot_yield(population, harvest = TRUE, biomass = TRUE, Ly = 60)
 ```
 
 ![](ypr_files/figure-html/unnamed-chunk-16-1.png)
 
 ``` r
+
 ypr_tabulate_yield(population, harvest = TRUE, biomass = TRUE, Ly = 60)
 #> # A tibble: 2 × 8
 #>   Type       pi     u  Yield   Age Length Weight Effort
@@ -375,12 +392,14 @@ relationship \pi = 1 - \exp(\log(1-q)\cdot E) which can be rearranged to
 give E = \frac{\log(1-\pi)}{\log(1-q)}.
 
 ``` r
+
 ypr_plot_yield(population, y = "Effort", harvest = TRUE, biomass = TRUE, Ly = 60)
 ```
 
 ![](ypr_files/figure-html/unnamed-chunk-17-1.png)
 
 ``` r
+
 ypr_plot_yield(population, y = "YPUE", harvest = TRUE, biomass = TRUE, Ly = 60)
 #> Warning: Removed 1 row containing missing values or values outside the scale range
 #> (`geom_line()`).
@@ -395,4 +414,4 @@ Data to Recommendations*. University of New Hampshire, Sea Grant College
 Program.
 
 Walters, Carl J., and Steven J. D. Martell. 2004. *Fisheries Ecology and
-Management*. Princeton, N.J: Princeton University Press.
+Management*. Princeton University Press.

@@ -19,6 +19,7 @@ that delays maturation in order to achieve sufficient size to switch to
 piscivory which allows it to grow much larger.
 
 ``` r
+
 library(ypr)
 library(ggplot2) # for plotting
 
@@ -37,6 +38,7 @@ ypr_plot_schedule(ecotypes) + scale_color_manual(values = c("black", "blue"))
 ![](ecotypes_files/figure-html/unnamed-chunk-1-1.png)
 
 ``` r
+
 ypr_plot_schedule(ecotypes, x = "Age", y = "Spawning") + scale_color_manual(values = c("black", "blue"))
 ```
 
@@ -45,12 +47,14 @@ ypr_plot_schedule(ecotypes, x = "Age", y = "Spawning") + scale_color_manual(valu
 ### Fish
 
 ``` r
+
 ypr_plot_fish(ecotypes, color = "white") + scale_fill_manual(values = c("black", "blue"))
 ```
 
 ![](ecotypes_files/figure-html/unnamed-chunk-2-1.png)
 
 ``` r
+
 ypr_plot_fish(ecotypes, x = "Length", y = "Caught", color = "white", binwidth = 15) + scale_fill_manual(values = c("black", "blue"))
 ```
 
@@ -59,12 +63,14 @@ ypr_plot_fish(ecotypes, x = "Length", y = "Caught", color = "white", binwidth = 
 ### Stock-Recruitment
 
 ``` r
+
 ypr_plot_sr(ecotypes, biomass = TRUE)
 ```
 
 ![](ecotypes_files/figure-html/unnamed-chunk-3-1.png)
 
 ``` r
+
 ypr_tabulate_sr(ecotypes, biomass = TRUE)
 #> # A tibble: 3 × 7
 #>   Type         pi      u  Eggs Recruits Spawners Fecundity
@@ -77,6 +83,7 @@ ypr_tabulate_sr(ecotypes, biomass = TRUE)
 ### Yield
 
 ``` r
+
 ypr_tabulate_yield(ecotypes, biomass = TRUE)
 #> # A tibble: 2 × 8
 #>   Type        pi      u Yield   Age Length Weight Effort

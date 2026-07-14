@@ -1,5 +1,12 @@
 # Changelog
 
+## ypr 0.6.0.9014
+
+### Continuous integration
+
+- Install binaries from r-universe for dev workflow
+  ([\#119](https://github.com/poissonconsulting/ypr/issues/119)).
+
 ## ypr 0.6.0.9013
 
 ### Continuous integration
