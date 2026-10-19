@@ -21,8 +21,8 @@ Checks if an ypr_ecotypes object with valid parameter values.
 check_ecotypes(ypr_ecotypes())
 }
 \seealso{
-Other check: 
-\code{\link{check_population}()},
-\code{\link{check_populations}()}
+Other check:
+\code{\link[=check_population]{check_population()}},
+\code{\link[=check_populations]{check_populations()}}
 }
 \concept{check}

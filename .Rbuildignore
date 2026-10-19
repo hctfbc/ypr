@@ -14,3 +14,4 @@
 ^_pkgdown\.yml$
 ^README\.Rmd$
 ^bibliography.bib$
+^\.claude$

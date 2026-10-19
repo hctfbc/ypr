@@ -41,14 +41,14 @@ ypr_plot_fish(ypr_population(), color = "white")
 \seealso{
 \code{\link[ggplot2:geom_histogram]{ggplot2::geom_histogram()}}
 
-Other fish: 
-\code{\link{ypr_tabulate_fish}()}
+Other fish:
+\code{\link[=ypr_tabulate_fish]{ypr_tabulate_fish()}}
 
-Other plot: 
-\code{\link{ypr_plot_biomass}()},
-\code{\link{ypr_plot_schedule}()},
-\code{\link{ypr_plot_sr}()},
-\code{\link{ypr_plot_yield}()}
+Other plot:
+\code{\link[=ypr_plot_biomass]{ypr_plot_biomass()}},
+\code{\link[=ypr_plot_schedule]{ypr_plot_schedule()}},
+\code{\link[=ypr_plot_sr]{ypr_plot_sr()}},
+\code{\link[=ypr_plot_yield]{ypr_plot_yield()}}
 }
 \concept{fish}
 \concept{plot}

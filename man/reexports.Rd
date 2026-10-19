@@ -11,6 +11,6 @@ These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{tibble}{\code{\link[tibble]{as_tibble}}}
+  \item{tibble}{\code{\link[tibble:as_tibble]{as_tibble()}}}
 }}
 

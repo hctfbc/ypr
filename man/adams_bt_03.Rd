@@ -25,7 +25,7 @@ and Telemetry Data. BC Ministry of Water Land and Air Protection, Kamloops,
 B.C.
 }
 \seealso{
-Other data: 
+Other data:
 \code{\link{chilliwack_bt_05}},
 \code{\link{kootenay_bt_13}},
 \code{\link{kootenay_rb}},

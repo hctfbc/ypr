@@ -22,7 +22,7 @@ ypr_ecotypes(Linf = c(1, 2))
 ypr_ecotypes(Linf = c(1, 2), t0 = c(0, 0.5))
 }
 \seealso{
-Other ecotypes: 
-\code{\link{as_ypr_ecotypes}()}
+Other ecotypes:
+\code{\link[=as_ypr_ecotypes]{as_ypr_ecotypes()}}
 }
 \concept{ecotypes}

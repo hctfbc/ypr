@@ -90,25 +90,25 @@ ypr_plot_yield(ypr_populations(Rk = c(2.5, 4.6), Llo = c(0, 60))) +
 ypr_plot_yield(ypr_population())
 }
 \seealso{
-Other populations: 
-\code{\link{as_ypr_populations}()},
+Other populations:
+\code{\link[=as_ypr_populations]{as_ypr_populations()}},
 \code{\link{chilliwack_bt_05}},
-\code{\link{ypr_populations}()},
-\code{\link{ypr_populations_expand}()},
-\code{\link{ypr_tabulate_sr}()},
-\code{\link{ypr_tabulate_yield}()},
-\code{\link{ypr_tabulate_yields}()}
+\code{\link[=ypr_populations]{ypr_populations()}},
+\code{\link[=ypr_populations_expand]{ypr_populations_expand()}},
+\code{\link[=ypr_tabulate_sr]{ypr_tabulate_sr()}},
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}},
+\code{\link[=ypr_tabulate_yields]{ypr_tabulate_yields()}}
 
-Other yield: 
-\code{\link{ypr_tabulate_yield}()},
-\code{\link{ypr_yield}()},
-\code{\link{ypr_yields}()}
+Other yield:
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}},
+\code{\link[=ypr_yield]{ypr_yield()}},
+\code{\link[=ypr_yields]{ypr_yields()}}
 
-Other plot: 
-\code{\link{ypr_plot_biomass}()},
-\code{\link{ypr_plot_fish}()},
-\code{\link{ypr_plot_schedule}()},
-\code{\link{ypr_plot_sr}()}
+Other plot:
+\code{\link[=ypr_plot_biomass]{ypr_plot_biomass()}},
+\code{\link[=ypr_plot_fish]{ypr_plot_fish()}},
+\code{\link[=ypr_plot_schedule]{ypr_plot_schedule()}},
+\code{\link[=ypr_plot_sr]{ypr_plot_sr()}}
 }
 \concept{plot}
 \concept{populations}

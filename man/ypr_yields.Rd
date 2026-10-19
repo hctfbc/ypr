@@ -37,17 +37,17 @@ pi <- seq(0, 1, length.out = 30)
 plot(pi, ypr_yields(ypr_population(), pi), type = "l")
 }
 \seealso{
-Other yield: 
-\code{\link{ypr_plot_yield}()},
-\code{\link{ypr_tabulate_yield}()},
-\code{\link{ypr_yield}()}
+Other yield:
+\code{\link[=ypr_plot_yield]{ypr_plot_yield()}},
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}},
+\code{\link[=ypr_yield]{ypr_yield()}}
 
-Other calculate: 
-\code{\link{ypr_age_at_length}()},
-\code{\link{ypr_exploitation}()},
-\code{\link{ypr_length_at_age}()},
-\code{\link{ypr_optimize}()},
-\code{\link{ypr_yield}()}
+Other calculate:
+\code{\link[=ypr_age_at_length]{ypr_age_at_length()}},
+\code{\link[=ypr_exploitation]{ypr_exploitation()}},
+\code{\link[=ypr_length_at_age]{ypr_length_at_age()}},
+\code{\link[=ypr_optimize]{ypr_optimize()}},
+\code{\link[=ypr_yield]{ypr_yield()}}
 }
 \concept{calculate}
 \concept{yield}

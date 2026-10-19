@@ -26,7 +26,7 @@ mortality of large, piscivorous Bull Trout and Rainbow Trout in Kootenay
 Lake, British Columbia (2008–2013). PeerJ 5: e2874. doi:10.7717/peerj.2874.
 }
 \seealso{
-Other data: 
+Other data:
 \code{\link{adams_bt_03}},
 \code{\link{chilliwack_bt_05}},
 \code{\link{kootenay_bt_13}},

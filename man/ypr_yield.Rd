@@ -36,17 +36,17 @@ ypr_yield(ypr_population())
 ypr_yield(ypr_ecotypes(Linf = c(100, 200)))
 }
 \seealso{
-Other yield: 
-\code{\link{ypr_plot_yield}()},
-\code{\link{ypr_tabulate_yield}()},
-\code{\link{ypr_yields}()}
+Other yield:
+\code{\link[=ypr_plot_yield]{ypr_plot_yield()}},
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}},
+\code{\link[=ypr_yields]{ypr_yields()}}
 
-Other calculate: 
-\code{\link{ypr_age_at_length}()},
-\code{\link{ypr_exploitation}()},
-\code{\link{ypr_length_at_age}()},
-\code{\link{ypr_optimize}()},
-\code{\link{ypr_yields}()}
+Other calculate:
+\code{\link[=ypr_age_at_length]{ypr_age_at_length()}},
+\code{\link[=ypr_exploitation]{ypr_exploitation()}},
+\code{\link[=ypr_length_at_age]{ypr_length_at_age()}},
+\code{\link[=ypr_optimize]{ypr_optimize()}},
+\code{\link[=ypr_yields]{ypr_yields()}}
 }
 \concept{calculate}
 \concept{yield}

@@ -33,16 +33,16 @@ Taylor, J.L. 2005. Sustainability of the Chilliwack Lake Char
 Fishery. Ministry of Water, Land and Air Protection, Surrey, B.C.
 }
 \seealso{
-Other populations: 
-\code{\link{as_ypr_populations}()},
-\code{\link{ypr_plot_yield}()},
-\code{\link{ypr_populations}()},
-\code{\link{ypr_populations_expand}()},
-\code{\link{ypr_tabulate_sr}()},
-\code{\link{ypr_tabulate_yield}()},
-\code{\link{ypr_tabulate_yields}()}
+Other populations:
+\code{\link[=as_ypr_populations]{as_ypr_populations()}},
+\code{\link[=ypr_plot_yield]{ypr_plot_yield()}},
+\code{\link[=ypr_populations]{ypr_populations()}},
+\code{\link[=ypr_populations_expand]{ypr_populations_expand()}},
+\code{\link[=ypr_tabulate_sr]{ypr_tabulate_sr()}},
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}},
+\code{\link[=ypr_tabulate_yields]{ypr_tabulate_yields()}}
 
-Other data: 
+Other data:
 \code{\link{adams_bt_03}},
 \code{\link{kootenay_bt_13}},
 \code{\link{kootenay_rb}},

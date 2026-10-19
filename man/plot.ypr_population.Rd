@@ -12,7 +12,7 @@
 \item{type}{A string specifying the plot type.
 Possible values include 'b', 'p' and 'l'.}
 
-\item{...}{Additional arguments passed to \link[graphics:plot.default]{graphics::plot} function.}
+\item{...}{Additional arguments passed to \link[graphics:plot]{graphics::plot} function.}
 }
 \value{
 An invisible copy of the original object.
@@ -26,5 +26,5 @@ plot(ypr_population())
 }
 }
 \seealso{
-\link[graphics:plot.default]{graphics::plot}
+\link[graphics:plot]{graphics::plot}
 }

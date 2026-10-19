@@ -20,18 +20,18 @@ Detabulate Population Parameters
 ypr_detabulate_parameters(ypr_tabulate_parameters(ypr_population()))
 }
 \seealso{
-Other tabulate: 
-\code{\link{ypr_report}()},
-\code{\link{ypr_tabulate_biomass}()},
-\code{\link{ypr_tabulate_fish}()},
-\code{\link{ypr_tabulate_parameters}()},
-\code{\link{ypr_tabulate_schedule}()},
-\code{\link{ypr_tabulate_sr}()},
-\code{\link{ypr_tabulate_yield}()},
-\code{\link{ypr_tabulate_yields}()}
+Other tabulate:
+\code{\link[=ypr_report]{ypr_report()}},
+\code{\link[=ypr_tabulate_biomass]{ypr_tabulate_biomass()}},
+\code{\link[=ypr_tabulate_fish]{ypr_tabulate_fish()}},
+\code{\link[=ypr_tabulate_parameters]{ypr_tabulate_parameters()}},
+\code{\link[=ypr_tabulate_schedule]{ypr_tabulate_schedule()}},
+\code{\link[=ypr_tabulate_sr]{ypr_tabulate_sr()}},
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}},
+\code{\link[=ypr_tabulate_yields]{ypr_tabulate_yields()}}
 
-Other parameters: 
-\code{\link{ypr_tabulate_parameters}()}
+Other parameters:
+\code{\link[=ypr_tabulate_parameters]{ypr_tabulate_parameters()}}
 }
 \concept{parameters}
 \concept{tabulate}

@@ -70,24 +70,24 @@ ypr_tabulate_yields(
 ypr_tabulate_yields(ypr_ecotypes(Linf = c(10, 20)))
 }
 \seealso{
-Other tabulate: 
-\code{\link{ypr_detabulate_parameters}()},
-\code{\link{ypr_report}()},
-\code{\link{ypr_tabulate_biomass}()},
-\code{\link{ypr_tabulate_fish}()},
-\code{\link{ypr_tabulate_parameters}()},
-\code{\link{ypr_tabulate_schedule}()},
-\code{\link{ypr_tabulate_sr}()},
-\code{\link{ypr_tabulate_yield}()}
+Other tabulate:
+\code{\link[=ypr_detabulate_parameters]{ypr_detabulate_parameters()}},
+\code{\link[=ypr_report]{ypr_report()}},
+\code{\link[=ypr_tabulate_biomass]{ypr_tabulate_biomass()}},
+\code{\link[=ypr_tabulate_fish]{ypr_tabulate_fish()}},
+\code{\link[=ypr_tabulate_parameters]{ypr_tabulate_parameters()}},
+\code{\link[=ypr_tabulate_schedule]{ypr_tabulate_schedule()}},
+\code{\link[=ypr_tabulate_sr]{ypr_tabulate_sr()}},
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}}
 
-Other populations: 
-\code{\link{as_ypr_populations}()},
+Other populations:
+\code{\link[=as_ypr_populations]{as_ypr_populations()}},
 \code{\link{chilliwack_bt_05}},
-\code{\link{ypr_plot_yield}()},
-\code{\link{ypr_populations}()},
-\code{\link{ypr_populations_expand}()},
-\code{\link{ypr_tabulate_sr}()},
-\code{\link{ypr_tabulate_yield}()}
+\code{\link[=ypr_plot_yield]{ypr_plot_yield()}},
+\code{\link[=ypr_populations]{ypr_populations()}},
+\code{\link[=ypr_populations_expand]{ypr_populations_expand()}},
+\code{\link[=ypr_tabulate_sr]{ypr_tabulate_sr()}},
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}}
 }
 \concept{populations}
 \concept{tabulate}

@@ -21,7 +21,7 @@ quesnel_bt
 ypr_plot_yield(quesnel_bt)
 }
 \seealso{
-Other data: 
+Other data:
 \code{\link{adams_bt_03}},
 \code{\link{chilliwack_bt_05}},
 \code{\link{kootenay_bt_13}},

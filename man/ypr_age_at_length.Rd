@@ -21,11 +21,11 @@ Age At Length
 ypr_age_at_length(ypr_population(), seq(0, 100, by = 10))
 }
 \seealso{
-Other calculate: 
-\code{\link{ypr_exploitation}()},
-\code{\link{ypr_length_at_age}()},
-\code{\link{ypr_optimize}()},
-\code{\link{ypr_yield}()},
-\code{\link{ypr_yields}()}
+Other calculate:
+\code{\link[=ypr_exploitation]{ypr_exploitation()}},
+\code{\link[=ypr_length_at_age]{ypr_length_at_age()}},
+\code{\link[=ypr_optimize]{ypr_optimize()}},
+\code{\link[=ypr_yield]{ypr_yield()}},
+\code{\link[=ypr_yields]{ypr_yields()}}
 }
 \concept{calculate}

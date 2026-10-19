@@ -93,10 +93,14 @@ import(yesno)
 importFrom(ggplot2,ggplot)
 importFrom(graphics,plot)
 importFrom(lifecycle,deprecated)
-importFrom(purrr,map)
-importFrom(purrr,map2)
-importFrom(purrr,transpose)
-importFrom(stats,setNames)
-importFrom(stats,update)
+importFrom(purrr,
+  map,
+  map2,
+  transpose
+)
+importFrom(stats,
+  setNames,
+  update
+)
 importFrom(tibble,as_tibble)
 importFrom(tidyplus,only)

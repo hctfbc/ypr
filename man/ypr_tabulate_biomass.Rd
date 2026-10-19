@@ -20,18 +20,18 @@ Produces a data frame of the 'Weight' and 'Fecundity' and the number of
 ypr_tabulate_biomass(ypr_population())
 }
 \seealso{
-Other tabulate: 
-\code{\link{ypr_detabulate_parameters}()},
-\code{\link{ypr_report}()},
-\code{\link{ypr_tabulate_fish}()},
-\code{\link{ypr_tabulate_parameters}()},
-\code{\link{ypr_tabulate_schedule}()},
-\code{\link{ypr_tabulate_sr}()},
-\code{\link{ypr_tabulate_yield}()},
-\code{\link{ypr_tabulate_yields}()}
+Other tabulate:
+\code{\link[=ypr_detabulate_parameters]{ypr_detabulate_parameters()}},
+\code{\link[=ypr_report]{ypr_report()}},
+\code{\link[=ypr_tabulate_fish]{ypr_tabulate_fish()}},
+\code{\link[=ypr_tabulate_parameters]{ypr_tabulate_parameters()}},
+\code{\link[=ypr_tabulate_schedule]{ypr_tabulate_schedule()}},
+\code{\link[=ypr_tabulate_sr]{ypr_tabulate_sr()}},
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}},
+\code{\link[=ypr_tabulate_yields]{ypr_tabulate_yields()}}
 
-Other biomass: 
-\code{\link{ypr_plot_biomass}()}
+Other biomass:
+\code{\link[=ypr_plot_biomass]{ypr_plot_biomass()}}
 }
 \concept{biomass}
 \concept{tabulate}

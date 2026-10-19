@@ -25,13 +25,13 @@ ypr_populations_expand(
 )
 }
 \seealso{
-Other populations: 
-\code{\link{as_ypr_populations}()},
+Other populations:
+\code{\link[=as_ypr_populations]{as_ypr_populations()}},
 \code{\link{chilliwack_bt_05}},
-\code{\link{ypr_plot_yield}()},
-\code{\link{ypr_populations}()},
-\code{\link{ypr_tabulate_sr}()},
-\code{\link{ypr_tabulate_yield}()},
-\code{\link{ypr_tabulate_yields}()}
+\code{\link[=ypr_plot_yield]{ypr_plot_yield()}},
+\code{\link[=ypr_populations]{ypr_populations()}},
+\code{\link[=ypr_tabulate_sr]{ypr_tabulate_sr()}},
+\code{\link[=ypr_tabulate_yield]{ypr_tabulate_yield()}},
+\code{\link[=ypr_tabulate_yields]{ypr_tabulate_yields()}}
 }
 \concept{populations}

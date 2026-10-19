@@ -47,7 +47,7 @@ as_ypr_ecotypes(ypr_populations(Ls = c(10, 15, 20)))
 as_ypr_ecotypes(ypr_ecotypes(Ls = c(10, 15, 20)))
 }
 \seealso{
-Other ecotypes: 
-\code{\link{ypr_ecotypes}()}
+Other ecotypes:
+\code{\link[=ypr_ecotypes]{ypr_ecotypes()}}
 }
 \concept{ecotypes}
