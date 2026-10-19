@@ -5,4 +5,4 @@ to see their documentation.
 
 - tibble:
 
-  [`as_tibble`](https://tibble.tidyverse.org/reference/as_tibble.html)
+  [`as_tibble()`](https://tibble.tidyverse.org/reference/as_tibble.html)
